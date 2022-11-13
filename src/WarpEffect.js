@@ -52,7 +52,6 @@ export default class Warpffect extends Effect{
 
 update(renderer, inputBuffer, deltaTime){
     this.uniforms.get('offset').value += deltaTime
-    this.uniforms.get('offset').value += deltaTime
     this.uniforms.get('mouseA').value = this.uniforms.get('mouse').value.current
     
 }
