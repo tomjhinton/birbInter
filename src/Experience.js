@@ -82,7 +82,7 @@ export default function Experience(){
         <OrbitControls makeDefault enableZoom={false}/>
         
 
-        {[...Array(25)].map((x, index) => {
+        {[...Array(50)].map((x, index) => {
                 return < mesh onClick={eventHandler} 
                 ref={ (element)=> boxes.current[index] = element }
                 key={index}

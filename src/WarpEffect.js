@@ -7,13 +7,17 @@ uniform float amplitude;
 uniform float offset;
 uniform vec2 mouseA;
 void mainUv(inout vec2 uv){
-    uv.y += sin(uv.x * frequency + offset) * mouseA.y;
+    uv.y += sin(uv.x * (frequency * mouseA.x) + (offset + length(uv-.5))) * mouseA.y;
+    uv.x += (sin((offset * .2) + length(uv)) * mouseA.x);
 }
 
 void mainImage(const in vec4 inputColor, const in vec2 uv, out vec4 outputColor)
 {
     vec4 color = inputColor;
-    color.rgb *= vec3(uv.x, uv.y,mouseA.x);
+
+    vec2 uv2 = uv;
+    uv2 = fract(uv * 10. * mouseA.y);
+    color.rgb *= vec3(uv.x + uv2.x, uv.y, mouseA.x);
     
     outputColor = color;
     //outputColor = vec4(.8, 1., .3, inputColor.a);
