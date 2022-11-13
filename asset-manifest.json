@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/birbInter/static/css/main.30c3c8a4.css",
-    "main.js": "/birbInter/static/js/main.fb1af645.js",
+    "main.js": "/birbInter/static/js/main.f980f656.js",
     "index.html": "/birbInter/index.html",
     "main.30c3c8a4.css.map": "/birbInter/static/css/main.30c3c8a4.css.map",
-    "main.fb1af645.js.map": "/birbInter/static/js/main.fb1af645.js.map"
+    "main.f980f656.js.map": "/birbInter/static/js/main.f980f656.js.map"
   },
   "entrypoints": [
     "static/css/main.30c3c8a4.css",
-    "static/js/main.fb1af645.js"
+    "static/js/main.f980f656.js"
   ]
 }
